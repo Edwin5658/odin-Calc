@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: rgb(197, 197, 197);
+    color: rgb(3, 3, 3);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.calculator {
+    width: 400px;
+    border: 2px black solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(11, 17, 9);
+}
+
+.screen {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(197, 236, 187);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.screen-last {
+    min-height: 32px;
+    font-size: 20px;
+}
+  
+.screen-current {
+    min-height: 64px;
+    font-size: 40px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.btn {
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.btn:active {
+    background-color: rgb(130, 130, 130);
+}
+
+.btn-red {
+    background-color: rgb(243, 100, 100);
+}
+  
+.btn-red:hover {
+    background-color: rgb(210, 90, 90);
+}
+  
+.btn-red:active {
+    background-color: rgb(190, 94, 94);
+}
+  
+.btn-blue {
+    background-color: rgb(86, 152, 238);
+}
+  
+.btn-blue:hover {
+    background-color: rgb(75, 139, 224);
+}
+  
+.btn-blue:active {
+    background-color: rgb(65, 128, 209);
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
