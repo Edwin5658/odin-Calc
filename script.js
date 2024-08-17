@@ -75,6 +75,11 @@ function clear() {
 
 function deleteNumber() {
     if (shouldClearScreen) return;
+    if (currentScreen.textContent === "0") return;
+    if (currentScreen.textContent.length === 1) {
+        currentScreen.textContent = "0";
+        return;
+    }
     currentScreen.textContent = currentScreen.textContent.toString().slice(0, -1);
 }
 

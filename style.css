@@ -117,8 +117,3 @@ button {
     background-color: rgb(65, 128, 209);
 }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
